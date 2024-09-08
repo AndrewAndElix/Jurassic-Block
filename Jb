@@ -1,0 +1,1064 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local JURASSICBLOCKY = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Row1 = Instance.new("Frame")
+local AttackNearest = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local AutoHeal = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local LocalPlrFarm = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Rejoin = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local LockOnTarget = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Annoy = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local _2ndAutoHeal = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local Row2 = Instance.new("Frame")
+local CoinCounter = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+
+-- Properties
+
+JURASSICBLOCKY.Name = "JURASSIC BLOCKY"
+JURASSICBLOCKY.Parent = game.CoreGui
+JURASSICBLOCKY.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = JURASSICBLOCKY
+Frame.BackgroundColor3 = Color3.new(1, 0, 0)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.421875, 0, 0.360853434, 0)
+Frame.Size = UDim2.new(0, 300, 0, 300)
+
+UICorner.Parent = Frame
+
+Row1.Name = "Row1"
+Row1.Parent = Frame
+Row1.BackgroundColor3 = Color3.new(1, 1, 1)
+Row1.BackgroundTransparency = 1
+Row1.BorderColor3 = Color3.new(0, 0, 0)
+Row1.BorderSizePixel = 0
+Row1.Position = UDim2.new(0, 0, 0.166666672, 0)
+Row1.Size = UDim2.new(0, 300, 0, 50)
+
+AttackNearest.Name = "Attack Nearest"
+AttackNearest.Parent = Row1
+AttackNearest.BackgroundColor3 = Color3.new(0.27451, 0, 0)
+AttackNearest.BackgroundTransparency = 0.5
+AttackNearest.BorderColor3 = Color3.new(0, 0, 0)
+AttackNearest.BorderSizePixel = 0
+AttackNearest.Position = UDim2.new(0, 0, -0.0133331297, 0)
+AttackNearest.Size = UDim2.new(0, 50, 0, 50)
+AttackNearest.Font = Enum.Font.SourceSansBold
+AttackNearest.Text = "Attack Nearest"
+AttackNearest.TextColor3 = Color3.new(0, 0, 0)
+AttackNearest.TextScaled = true
+AttackNearest.TextSize = 14
+AttackNearest.TextWrapped = true
+
+UICorner_2.Parent = AttackNearest
+
+AutoHeal.Name = "Auto Heal"
+AutoHeal.Parent = Row1
+AutoHeal.BackgroundColor3 = Color3.new(0.27451, 0, 0)
+AutoHeal.BackgroundTransparency = 0.5
+AutoHeal.BorderColor3 = Color3.new(0, 0, 0)
+AutoHeal.BorderSizePixel = 0
+AutoHeal.Position = UDim2.new(0.166666672, 0, -0.0133331297, 0)
+AutoHeal.Size = UDim2.new(0, 50, 0, 25)
+AutoHeal.Font = Enum.Font.SourceSansBold
+AutoHeal.Text = "Auto Heal"
+AutoHeal.TextColor3 = Color3.new(0, 0, 0)
+AutoHeal.TextScaled = true
+AutoHeal.TextSize = 14
+AutoHeal.TextWrapped = true
+
+UICorner_3.Parent = AutoHeal
+
+LocalPlrFarm.Name = "LocalPlrFarm"
+LocalPlrFarm.Parent = Row1
+LocalPlrFarm.BackgroundColor3 = Color3.new(0.27451, 0, 0)
+LocalPlrFarm.BackgroundTransparency = 0.5
+LocalPlrFarm.BorderColor3 = Color3.new(0, 0, 0)
+LocalPlrFarm.BorderSizePixel = 0
+LocalPlrFarm.Position = UDim2.new(0.5, 0, -0.0133325197, 0)
+LocalPlrFarm.Size = UDim2.new(0, 50, 0, 50)
+LocalPlrFarm.Font = Enum.Font.SourceSansBold
+LocalPlrFarm.Text = "Safer Auto Farm"
+LocalPlrFarm.TextColor3 = Color3.new(0, 0, 0)
+LocalPlrFarm.TextScaled = true
+LocalPlrFarm.TextSize = 14
+LocalPlrFarm.TextWrapped = true
+
+UICorner_4.Parent = LocalPlrFarm
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = Row1
+Rejoin.BackgroundColor3 = Color3.new(0.27451, 0, 0)
+Rejoin.BackgroundTransparency = 0.5
+Rejoin.BorderColor3 = Color3.new(0, 0, 0)
+Rejoin.BorderSizePixel = 0
+Rejoin.Position = UDim2.new(0.333333343, 0, -0.0133331297, 0)
+Rejoin.Size = UDim2.new(0, 50, 0, 50)
+Rejoin.Font = Enum.Font.SourceSansBold
+Rejoin.Text = "Rejoin"
+Rejoin.TextColor3 = Color3.new(0, 0, 0)
+Rejoin.TextScaled = true
+Rejoin.TextSize = 14
+Rejoin.TextWrapped = true
+
+UICorner_5.Parent = Rejoin
+
+LockOnTarget.Name = "LockOnTarget"
+LockOnTarget.Parent = Row1
+LockOnTarget.BackgroundColor3 = Color3.new(0.27451, 0, 0)
+LockOnTarget.BackgroundTransparency = 0.5
+LockOnTarget.BorderColor3 = Color3.new(0, 0, 0)
+LockOnTarget.BorderSizePixel = 0
+LockOnTarget.Position = UDim2.new(0.666666687, 0, -0.0133325197, 0)
+LockOnTarget.Size = UDim2.new(0, 50, 0, 50)
+LockOnTarget.Font = Enum.Font.SourceSansBold
+LockOnTarget.Text = "Lock Target"
+LockOnTarget.TextColor3 = Color3.new(0, 0, 0)
+LockOnTarget.TextScaled = true
+LockOnTarget.TextSize = 14
+LockOnTarget.TextWrapped = true
+
+UICorner_6.Parent = LockOnTarget
+
+Annoy.Name = "Annoy"
+Annoy.Parent = Row1
+Annoy.BackgroundColor3 = Color3.new(0.27451, 0, 0)
+Annoy.BackgroundTransparency = 0.5
+Annoy.BorderColor3 = Color3.new(0, 0, 0)
+Annoy.BorderSizePixel = 0
+Annoy.Position = UDim2.new(0.833333313, 0, -0.0133325197, 0)
+Annoy.Size = UDim2.new(0, 50, 0, 50)
+Annoy.Font = Enum.Font.SourceSansBold
+Annoy.Text = "Annoy Sounds"
+Annoy.TextColor3 = Color3.new(0, 0, 0)
+Annoy.TextScaled = true
+Annoy.TextSize = 14
+Annoy.TextWrapped = true
+
+UICorner_7.Parent = Annoy
+
+_2ndAutoHeal.Name = "2nd Auto Heal"
+_2ndAutoHeal.Parent = Row1
+_2ndAutoHeal.BackgroundColor3 = Color3.new(0.27451, 0, 0)
+_2ndAutoHeal.BackgroundTransparency = 0.5
+_2ndAutoHeal.BorderColor3 = Color3.new(0, 0, 0)
+_2ndAutoHeal.BorderSizePixel = 0
+_2ndAutoHeal.Position = UDim2.new(0.166666672, 0, 0.486666858, 0)
+_2ndAutoHeal.Size = UDim2.new(0, 50, 0, 25)
+_2ndAutoHeal.Font = Enum.Font.SourceSansBold
+_2ndAutoHeal.Text = "2nd Heal"
+_2ndAutoHeal.TextColor3 = Color3.new(0, 0, 0)
+_2ndAutoHeal.TextScaled = true
+_2ndAutoHeal.TextSize = 14
+_2ndAutoHeal.TextWrapped = true
+
+UICorner_8.Parent = _2ndAutoHeal
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0.176471, 0, 0)
+Title.BackgroundTransparency = 0.75
+Title.BorderColor3 = Color3.new(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 300, 0, 50)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "JURASSIC BLOCKY"
+Title.TextColor3 = Color3.new(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14
+Title.TextWrapped = true
+
+UICorner_9.Parent = Title
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.new(1, 1, 1)
+Close.BackgroundTransparency = 0.5
+Close.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Close.Position = UDim2.new(0.877588689, 0, 0.893333316, 0)
+Close.Size = UDim2.new(0, 36, 0, 32)
+Close.Font = Enum.Font.SourceSansBold
+Close.Text = "X"
+Close.TextColor3 = Color3.new(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+
+Row2.Name = "Row2"
+Row2.Parent = Frame
+Row2.BackgroundColor3 = Color3.new(1, 1, 1)
+Row2.BackgroundTransparency = 1
+Row2.BorderColor3 = Color3.new(0, 0, 0)
+Row2.BorderSizePixel = 0
+Row2.Position = UDim2.new(0, 0, 0.331111252, 0)
+Row2.Size = UDim2.new(0, 300, 0, 50)
+
+CoinCounter.Name = "CoinCounter"
+CoinCounter.Parent = JURASSICBLOCKY
+CoinCounter.BackgroundColor3 = Color3.new(0, 0, 0)
+CoinCounter.BackgroundTransparency = 0.6000000238418579
+CoinCounter.BorderColor3 = Color3.new(0, 0, 0)
+CoinCounter.BorderSizePixel = 0
+CoinCounter.Position = UDim2.new(0.395740569, 0, -0.000713613525, 0)
+CoinCounter.Size = UDim2.new(0, 400, 0, 65)
+CoinCounter.Font = Enum.Font.SourceSansBold
+CoinCounter.Text = "Dino Coins:"
+CoinCounter.TextColor3 = Color3.new(0, 0, 0)
+CoinCounter.TextScaled = true
+CoinCounter.TextSize = 14
+CoinCounter.TextWrapped = true
+
+UICorner_10.Parent = CoinCounter
+
+-- Scripts
+
+local function IYFLHDP_fake_script() -- AttackNearest.LocalScript 
+	local script = Instance.new('LocalScript', AttackNearest)
+
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	local highlight
+	
+	-- Function to find the closest player to the local player
+	local function getClosestPlayer()
+		local closestPlayer = nil
+		local shortestDistance = math.huge
+		local localCharacter = localPlayer.Character
+	
+		if localCharacter and localCharacter:FindFirstChild("HumanoidRootPart") then
+			local localHRP = localCharacter.HumanoidRootPart.Position
+	
+			for _, player in pairs(Players:GetPlayers()) do
+				if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") and player.Character.Humanoid.Health > 0 then
+					local distance = (localHRP - player.Character.HumanoidRootPart.Position).magnitude
+					if distance < shortestDistance then
+						closestPlayer = player
+						shortestDistance = distance
+					end
+				end
+			end
+		end
+	
+		return closestPlayer
+	end
+	
+	-- Function to highlight a player using the Roblox Highlight feature
+	local function highlightPlayer(player)
+		if highlight then
+			highlight:Destroy()
+		end
+	
+		if player and player.Character then
+			highlight = Instance.new("Highlight")
+			highlight.FillColor = Color3.new(1, 1, 0) -- Yellow color
+			highlight.OutlineColor = Color3.new(1, 1, 0) -- Yellow outline
+			highlight.Parent = player.Character
+		end
+	end
+	
+	-- Function to attack the closest player
+	local function attackPlayer(player)
+		if player then
+			local args = {
+				[1] = player.Character.Humanoid,
+				[2] = 1000,
+				[3] = 0.5,
+				[4] = 0,
+				[5] = localPlayer.Character.HumanoidRootPart,
+				[6] = 1,
+				[7] = localPlayer.Character.DinosaurName
+			}
+			ReplicatedStorage:WaitForChild("RemoteEvents"):WaitForChild("Damage"):FireServer(unpack(args))
+		end
+	end
+	
+	-- Function to execute the main logic
+	local function executeLogic()
+		-- Continuously check for the closest player and update highlight
+		RunService.Heartbeat:Connect(function()
+			local closestPlayer = getClosestPlayer()
+			highlightPlayer(closestPlayer)
+		end)
+	
+		-- Detect key press
+		UserInputService.InputBegan:Connect(function(input, gameProcessed)
+			if input.KeyCode == Enum.KeyCode.E and not gameProcessed then
+				local closestPlayer = getClosestPlayer()
+				attackPlayer(closestPlayer)
+			end
+		end)
+	end
+	
+	-- Detect button click
+	local textButton = script.Parent
+	textButton.MouseButton1Click:Connect(function()
+		executeLogic()
+	end)
+	
+end
+coroutine.wrap(IYFLHDP_fake_script)()
+local function FTOX_fake_script() -- AutoHeal.LocalScript 
+	local script = Instance.new('LocalScript', AutoHeal)
+
+	local textButton = script.Parent
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local localPlayer = Players.LocalPlayer
+	local isHealingEnabled = false
+	local healingLoop
+	
+	-- Function to heal the player
+	local function healPlayer()
+		local character = localPlayer.Character
+		if character then
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				while isHealingEnabled do
+					if humanoid.Health <= humanoid.MaxHealth * 0.5 then
+						while humanoid.Health < humanoid.MaxHealth * 0.8 and isHealingEnabled do
+							local args = {
+								[1] = character,
+								[2] = humanoid.MaxHealth
+							}
+							ReplicatedStorage:WaitForChild("RemoteEvents"):WaitForChild("Heal"):FireServer(unpack(args))
+							wait(0.2)
+						end
+					end
+					wait(0.2)
+				end
+			end
+		end
+	end
+	
+	-- Toggle healing function with color tween
+	local function toggleHealing()
+		isHealingEnabled = not isHealingEnabled
+	
+		-- Tween color based on enabled or disabled state
+		if isHealingEnabled then
+			textButton.Text = "Disable Healing"
+			TweenService:Create(textButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+			healingLoop = RunService.Heartbeat:Connect(healPlayer)
+		else
+			textButton.Text = "Enable Healing"
+			TweenService:Create(textButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(70, 0, 0)}):Play()
+			if healingLoop then
+				healingLoop:Disconnect()
+				healingLoop = nil
+			end
+		end
+	end
+	
+	-- Detect button click
+	textButton.MouseButton1Click:Connect(toggleHealing)
+	
+end
+coroutine.wrap(FTOX_fake_script)()
+local function VHTF_fake_script() -- LocalPlrFarm.LocalScript 
+	local script = Instance.new('LocalScript', LocalPlrFarm)
+
+	-- LocalScript inside the Enable/Disable TextButton
+	local TextButton = script.Parent
+	local TweenService = game:GetService("TweenService")
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local remoteEvents = ReplicatedStorage:WaitForChild("RemoteEvents")
+	local spawnEvent = remoteEvents:WaitForChild("Spawn")
+	local killEvent = remoteEvents:WaitForChild("Damage")
+	
+	local isEnabled = false
+	local localPlayer = Players.LocalPlayer
+	
+	local spawnArgs = {
+		[1] = "",  -- Dinosaur type (will be set automatically)
+		[2] = "Default",     -- Spawn option
+		[3] = "None"         -- Other option
+	}
+	
+	local function getDinosaurName()
+		-- Assuming the dinosaur name can be found in the player's character
+		local character = localPlayer.Character
+		if not character then return nil end
+	
+		local dinoName = character:FindFirstChild("DinosaurName")  -- Replace with the appropriate method to get the dinosaur name
+		if dinoName and dinoName:IsA("StringValue") then
+			return dinoName.Value
+		end
+	
+		-- If the dinosaur name is not in the character, look it up in another way
+		-- For example, you could check the player's inventory, stats, etc.
+	
+		return nil
+	end
+	
+	local function getKillArgs()
+		local character = localPlayer.Character
+		if not character then return end
+	
+		return {
+			[1] = character:WaitForChild("Humanoid"),
+			[2] = 9999,  -- Damage amount
+			[3] = 0.5,   -- Some value (adjust as needed)
+			[4] = 0,     -- Another value (adjust as needed)
+			[5] = character:WaitForChild("HumanoidRootPart"),
+			[6] = 1,     -- Yet another value (adjust as needed)
+			[7] = character:FindFirstChild("DinosaurName") and character.DinosaurName.Value
+		}
+	end
+	
+	local function toggleLoop()
+		isEnabled = not isEnabled
+	
+		if isEnabled then
+			-- Tween to white when enabled
+			TweenService:Create(TextButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	
+			while isEnabled do
+				-- Automatically find the dinosaur name
+				local dinoName = getDinosaurName()
+				if dinoName then
+					-- Set the dinosaur name for spawning
+					spawnArgs[1] = dinoName
+	
+					-- Fire the spawn event
+					spawnEvent:FireServer(unpack(spawnArgs))
+	
+					-- Wait a short moment (adjust as necessary)
+					wait(0.1)
+	
+					-- Fire the kill event
+					local killArgs = getKillArgs()
+					if killArgs then
+						killEvent:FireServer(unpack(killArgs))
+					end
+				end
+	
+				-- Wait a short moment (adjust as necessary)
+				wait(0.1)
+			end
+		else
+			-- Tween back to the original color when disabled
+			TweenService:Create(TextButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(70, 0, 0)}):Play()
+		end
+	end
+	
+	TextButton.MouseButton1Click:Connect(toggleLoop)
+	
+end
+coroutine.wrap(VHTF_fake_script)()
+local function RLTNM_fake_script() -- Rejoin.LocalScript 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local teleportService = game:GetService("TeleportService")
+		local placeId = game.PlaceId -- Get the current game's Place ID
+	
+		teleportService:Teleport(placeId, player)
+	end)
+	
+end
+coroutine.wrap(RLTNM_fake_script)()
+local function AQNMES_fake_script() -- LockOnTarget.LocalScript 
+	local script = Instance.new('LocalScript', LockOnTarget)
+
+	-- LocalScript inside the Enable/Disable TextButton
+	local TextButton = script.Parent
+	local TweenService = game:GetService("TweenService")
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	local isEnabled = false
+	local isAiming = false
+	local localPlayer = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	local mouse = localPlayer:GetMouse()
+	local lockedTarget = nil
+	
+	local function getClosestTargetToCursor()
+		local closestDistance = math.huge
+		local closestTarget = nil
+	
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local targetPosition = player.Character.HumanoidRootPart.Position
+				local screenPoint = camera:WorldToScreenPoint(targetPosition)
+				local distance = (Vector2.new(screenPoint.X, screenPoint.Y) - Vector2.new(mouse.X, mouse.Y)).magnitude
+	
+				if distance < closestDistance then
+					closestDistance = distance
+					closestTarget = player
+				end
+			end
+		end
+	
+		return closestTarget
+	end
+	
+	local function aimAtTarget(target)
+		if target and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+			local targetPosition = target.Character.HumanoidRootPart.Position
+			camera.CFrame = CFrame.new(camera.CFrame.Position, targetPosition)
+		end
+	end
+	
+	local function toggleAiming()
+		isAiming = not isAiming
+	
+		if isAiming and isEnabled then
+			-- Lock onto the current closest target to the cursor
+			if not lockedTarget then
+				lockedTarget = getClosestTargetToCursor()
+			end
+	
+			-- Start aiming at the locked target
+			RunService.RenderStepped:Connect(function()
+				if isAiming and lockedTarget then
+					aimAtTarget(lockedTarget)
+				end
+			end)
+		else
+			-- Clear the locked target when disabling aiming
+			lockedTarget = nil
+		end
+	end
+	
+	local function toggleAimbot()
+		isEnabled = not isEnabled
+	
+		if isEnabled then
+			-- Tween to white when enabled
+			TweenService:Create(TextButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+		else
+			-- Tween back to the original color when disabled
+			TweenService:Create(TextButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(70, 0, 0)}):Play()
+			isAiming = false  -- Disable aiming when aimbot is turned off
+			lockedTarget = nil  -- Reset the locked target
+		end
+	end
+	
+	TextButton.MouseButton1Click:Connect(toggleAimbot)
+	
+	UserInputService.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.E and isEnabled then
+			toggleAiming()
+		end
+	end)
+	
+end
+coroutine.wrap(AQNMES_fake_script)()
+local function YMEB_fake_script() -- Annoy.LocalScript 
+	local script = Instance.new('LocalScript', Annoy)
+
+	-- LocalScript inside the Enable/Disable TextButton
+	local TextButton = script.Parent
+	local TweenService = game:GetService("TweenService")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	local isEnabled = false
+	local remoteEvent = ReplicatedStorage:WaitForChild("RemoteEvents"):WaitForChild("SoundPlay")
+	
+	local function fireEvent()
+		local args = {
+			[1] = "Call2"
+		}
+	
+		remoteEvent:FireServer(unpack(args))
+	end
+	
+	local function toggleLoop()
+		isEnabled = not isEnabled
+	
+		if isEnabled then
+			-- Tween to white when enabled
+			TweenService:Create(TextButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+	
+			-- Start the loop
+			while isEnabled do
+				fireEvent()
+				wait(0.1)  -- Adjust the wait time as needed to control the spam rate
+			end
+		else
+			-- Tween back to original color when disabled
+			TweenService:Create(TextButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(70, 0, 0)}):Play()
+		end
+	end
+	
+	TextButton.MouseButton1Click:Connect(toggleLoop)
+	
+end
+coroutine.wrap(YMEB_fake_script)()
+local function WQLQDPQ_fake_script() -- _2ndAutoHeal.LocalScript 
+	local script = Instance.new('LocalScript', _2ndAutoHeal)
+
+	local textButton = script.Parent
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local TweenService = game:GetService("TweenService")
+	
+	local localPlayer = Players.LocalPlayer
+	local isHealingEnabled = false
+	local healingLoop
+	
+	-- Function to heal the player
+	local function healPlayer()
+		while isHealingEnabled do
+			local character = localPlayer.Character
+			if character then
+				local humanoid = character:FindFirstChildOfClass("Humanoid")
+				if humanoid and humanoid.Health < humanoid.MaxHealth then
+					local args = {
+						[1] = character,
+						[2] = humanoid.MaxHealth -- Use the character's max health
+					}
+					ReplicatedStorage:WaitForChild("RemoteEvents"):WaitForChild("Heal"):FireServer(unpack(args))
+				end
+			end
+			wait(3) -- Heal every 3 seconds
+		end
+	end
+	
+	-- Toggle healing with color tween
+	local function toggleHealing()
+		isHealingEnabled = not isHealingEnabled
+	
+		-- Tween color based on enabled or disabled state
+		if isHealingEnabled then
+			textButton.Text = "Disable Healing"
+			TweenService:Create(textButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(255, 255, 255)}):Play()
+			healingLoop = coroutine.wrap(healPlayer)
+			healingLoop()
+		else
+			textButton.Text = "Enable Healing"
+			TweenService:Create(textButton, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(70, 0, 0)}):Play()
+			isHealingEnabled = false
+		end
+	end
+	
+	-- Detect button click
+	textButton.MouseButton1Click:Connect(toggleHealing)
+	
+end
+coroutine.wrap(WQLQDPQ_fake_script)()
+local function WXFZZHR_fake_script() -- Frame.DragCloseGui 
+	local script = Instance.new('LocalScript', Frame)
+
+	local frame = script.Parent
+	local title = frame:FindFirstChild("Title")
+	local children = frame:GetChildren()
+	local minimizedSize = UDim2.new(0, 300, 0, 50)
+	local normalSize = UDim2.new(0, 300, 0, 300) -- Adjust to your normal size
+	local isMinimized = true
+	local TweenService = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local dragSpeed = 0.1  -- Speed factor for dragging effect
+	
+	-- Function to show or hide children except the title
+	local function setChildrenVisibility(visible)
+		for _, child in ipairs(children) do
+			if child:IsA("GuiObject") and child ~= title then
+				child.Visible = visible
+			end
+		end
+	end
+	
+	-- Initialize frame size and appearance
+	frame.Size = minimizedSize
+	frame.BackgroundColor3 = Color3.fromRGB(240, 240, 240)
+	frame.BorderSizePixel = 0
+	setChildrenVisibility(false)
+	title.Visible = true
+	
+	-- Add a UICorner to the frame
+	local uiCorner = Instance.new("UICorner")
+	uiCorner.CornerRadius = UDim.new(0, 12)
+	uiCorner.Parent = frame
+	
+	-- Add a frame for shadow
+	local shadow = Instance.new("Frame")
+	shadow.Size = frame.Size + UDim2.new(0, 10, 0, 10)
+	shadow.Position = frame.Position + UDim2.new(0, -5, 0, -5)
+	shadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	shadow.BackgroundTransparency = 0.7
+	shadow.ZIndex = frame.ZIndex - 1
+	shadow.Parent = frame.Parent
+	
+	-- Ensure shadow follows the frame
+	frame:GetPropertyChangedSignal("Size"):Connect(function()
+		shadow.Size = frame.Size + UDim2.new(0, 10, 0, 10)
+	end)
+	frame:GetPropertyChangedSignal("Position"):Connect(function()
+		shadow.Position = frame.Position + UDim2.new(0, -5, 0, -5)
+	end)
+	
+	-- Add a UIGradient to the frame
+	local gradient = Instance.new("UIGradient")
+	gradient.Color = ColorSequence.new({
+		ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 123, 123)),
+		ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
+	})
+	gradient.Rotation = 45
+	gradient.Parent = frame
+	
+	-- Function to tween the frame size
+	local function tweenFrameSize(size)
+		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = TweenService:Create(frame, tweenInfo, {Size = size})
+		tween:Play()
+	end
+	
+	-- Elastic dragging effect
+	local dragging = false
+	local dragStart = Vector2.new()
+	local startPos = UDim2.new()
+	local goalPos = UDim2.new()
+	
+	local function updateDrag(dt)
+		if dragging then
+			local mousePos = UserInputService:GetMouseLocation()
+			local delta = mousePos - dragStart
+			goalPos = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			frame.Position = UDim2.new(
+				frame.Position.X.Scale,
+				frame.Position.X.Offset + (goalPos.X.Offset - frame.Position.X.Offset) * dragSpeed,
+				frame.Position.Y.Scale,
+				frame.Position.Y.Offset + (goalPos.Y.Offset - frame.Position.Y.Offset) * dragSpeed
+			)
+		end
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = UserInputService:GetMouseLocation()
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	RunService.RenderStepped:Connect(updateDrag)
+	
+	-- Hover to toggle size
+	frame.MouseEnter:Connect(function()
+		if isMinimized then
+			tweenFrameSize(normalSize)
+			setChildrenVisibility(true)
+			isMinimized = false
+		end
+	end)
+	
+	frame.MouseLeave:Connect(function()
+		if not isMinimized then
+			tweenFrameSize(minimizedSize)
+			setChildrenVisibility(false)
+			title.Visible = true
+			isMinimized = true
+		end
+	end)
+	
+	-- Improving the Title Bar
+	title.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+	title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	title.Font = Enum.Font.GothamBold
+	title.TextSize = 20  -- Adjust the font size as needed
+	title.Size = UDim2.new(1, 0, 0, 50)  -- Ensure the title bar is the full width of the frame
+	
+	-- Style other child elements similarly
+	for _, child in ipairs(children) do
+		if child:IsA("GuiObject") and child ~= title then
+			child.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			child.BorderSizePixel = 0
+		end
+	end
+	
+end
+coroutine.wrap(WXFZZHR_fake_script)()
+local function LZAABP_fake_script() -- Frame.RemoveDF 
+	local script = Instance.new('LocalScript', Frame)
+
+	-- LocalScript to keep the "Died" frame in "JB" GUI invisible
+	local Players = game:GetService("Players")
+	local localPlayer = Players.LocalPlayer
+	local StarterGui = game:GetService("StarterGui")
+	
+	local function keepDiedFrameInvisible()
+		-- Function to make the "Died" frame invisible
+		local function makeInvisible(frame)
+			if frame and frame.Visible then
+				frame.Visible = false
+			end
+		end
+	
+		-- Monitor the frame in StarterGui
+		local JBGui = StarterGui:FindFirstChild("JB")
+		if JBGui then
+			local diedFrame = JBGui:FindFirstChild("Died")
+			makeInvisible(diedFrame)
+		end
+	
+		-- Monitor the frame in the player's PlayerGui (on their screen)
+		local playerGui = localPlayer:WaitForChild("PlayerGui")
+		local JBGuiOnScreen = playerGui:FindFirstChild("JB")
+		if JBGuiOnScreen then
+			local diedFrameOnScreen = JBGuiOnScreen:FindFirstChild("Died")
+			makeInvisible(diedFrameOnScreen)
+		end
+	end
+	
+	-- Run the function initially
+	keepDiedFrameInvisible()
+	
+	-- Continuously check every 0.1 seconds to keep the "Died" frame invisible
+	while true do
+		keepDiedFrameInvisible()
+		wait(0.1)
+	end
+	
+	-- Connect to the 'AncestryChanged' event to make the frame invisible whenever it is added
+	localPlayer.PlayerGui.ChildAdded:Connect(function(child)
+		if child.Name == "JB" then
+			local diedFrame = child:FindFirstChild("Died")
+			if diedFrame then
+				diedFrame.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(LZAABP_fake_script)()
+local function WZFM_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local Gui = script.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Gui:Destroy()
+	end)
+	
+end
+coroutine.wrap(WZFM_fake_script)()
+local function GAQMU_fake_script() -- Frame.AntiBan 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Players = game:GetService("Players")
+	local localPlayer = Players.LocalPlayer
+	
+	-- Blacklisted players by role
+	local Mods = {
+	    "LovelyRokudenashi",
+	    "shadddoooo",
+	    "SpinosaurusIV",
+	    "fedinossaurobr"
+	}
+	
+	local Admins = {
+	    "MexicanFireChicken",
+	    "MannoDHz",
+	    "GoldenGamer5212"
+	}
+	
+	local Owner = "LucasG3mes"
+	
+	local function isBlacklisted(playerName)
+	    if table.find(Mods, playerName) then
+	        return "MOD"
+	    elseif table.find(Admins, playerName) then
+	        return "ADMIN"
+	    elseif playerName == Owner then
+	        return "OWNER"
+	    else
+	        return nil
+	    end
+	end
+	
+	local function checkPlayers()
+	    for _, player in pairs(Players:GetPlayers()) do
+	        local role = isBlacklisted(player.Name)
+	        if role then
+	            local reason
+	            if role == "OWNER" then
+	                reason = "THE " .. role .. " HAS JOINED THE GAME 🫡"
+	            else
+	                reason = "AN " .. role .. " HAS JOINED THE GAME 🫡"
+	            end
+	            localPlayer:Kick(reason)
+	            break
+	        end
+	    end
+	end
+	
+	-- Check players on join
+	Players.PlayerAdded:Connect(function(player)
+	    checkPlayers()
+	end)
+	
+	-- Initial check when the script runs
+	checkPlayers()
+	
+end
+coroutine.wrap(GAQMU_fake_script)()
+local function YEAC_fake_script() -- Frame.AgileMode 
+	local script = Instance.new('LocalScript', Frame)
+
+	local player = game.Players.LocalPlayer
+	local userInputService = game:GetService("UserInputService")
+	local starterGui = game:GetService("StarterGui")
+	local runService = game:GetService("RunService")
+	
+	local agileEnabled = false
+	
+	-- Keybind for toggling agile mode
+	local toggleKey = Enum.KeyCode.T
+	
+	-- Adjust these variables according to your game setup
+	local defaultWalkSpeed = 16
+	local defaultJumpPower = 50
+	local agileWalkSpeed = 50
+	local agileJumpPower = 90
+	
+	-- Function to show a notification
+	local function showNotification(message)
+		starterGui:SetCore("SendNotification", {
+			Title = "Agile Mode",
+			Text = message,
+			Duration = 2
+		})
+	end
+	
+	-- Function to toggle agile mode
+	local function toggleAgileMode()
+		agileEnabled = not agileEnabled
+		if agileEnabled then
+			showNotification("Agile Mode Enabled")
+		else
+			showNotification("Agile Mode Disabled")
+			-- Reset to default settings
+			if player.Character and player.Character:FindFirstChild("Humanoid") then
+				local humanoid = player.Character.Humanoid
+				humanoid.WalkSpeed = defaultWalkSpeed
+				humanoid.JumpPower = defaultJumpPower
+			end
+		end
+	end
+	
+	-- Keybind listener for toggling agile mode
+	userInputService.InputBegan:Connect(function(input, gameProcessed)
+		if not gameProcessed and input.KeyCode == toggleKey then
+			toggleAgileMode()
+		end
+	end)
+	
+	-- Loop to continuously apply WalkSpeed and JumpPower while agile mode is enabled
+	runService.RenderStepped:Connect(function()
+		if agileEnabled and player.Character and player.Character:FindFirstChild("Humanoid") then
+			local humanoid = player.Character.Humanoid
+			humanoid.WalkSpeed = agileWalkSpeed
+			humanoid.JumpPower = agileJumpPower
+		end
+	end)
+	
+	-- Optional: Reset to default when Shift is released
+	userInputService.InputEnded:Connect(function(input, gameProcessed)
+		if not gameProcessed and input.KeyCode == Enum.KeyCode.LeftShift and agileEnabled then
+			if player.Character and player.Character:FindFirstChild("Humanoid") then
+				local humanoid = player.Character.Humanoid
+				humanoid.WalkSpeed = defaultWalkSpeed
+				humanoid.JumpPower = defaultJumpPower
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(YEAC_fake_script)()
+local function SHZUZHB_fake_script() -- CoinCounter.RainbowGUIScript 
+	local script = Instance.new('LocalScript', CoinCounter)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(SHZUZHB_fake_script)()
+local function TGVRMM_fake_script() -- CoinCounter.LocalScript 
+	local script = Instance.new('LocalScript', CoinCounter)
+
+	local player = game:GetService("Players").LocalPlayer
+	local dinoCoin = player:WaitForChild("Inventory"):WaitForChild("DinoCoin")
+	local textLabel = script.Parent
+	
+	-- Update the TextLabel with the current DinoCoin value
+	local function updateText()
+		textLabel.Text = "DinoCoin: " .. dinoCoin.Value
+	end
+	
+	-- Connect a listener for changes in the DinoCoin value
+	dinoCoin.Changed:Connect(function()
+		updateText()
+	end)
+	
+	-- Initial update
+	updateText()
+	
+end
+coroutine.wrap(TGVRMM_fake_script)()
